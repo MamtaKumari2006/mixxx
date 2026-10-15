@@ -11,7 +11,7 @@ ApplicationWindow {
     color: startupScreen.backgroundColor
     height: 1008
     menuBar: mainWindowLoader.item ? mainWindowLoader.item.menuBar : null
-    minimumHeight: 668
+    minimumHeight: 720
     minimumWidth: 1280
     visible: true
     width: 1792

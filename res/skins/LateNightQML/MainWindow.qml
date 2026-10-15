@@ -180,7 +180,7 @@ Item {
                 id: waveforms
 
                 SplitView.fillHeight: !library.active
-                SplitView.minimumHeight: visible ? minimumContentHeight : 0
+                SplitView.minimumHeight: visible ? Math.min(minimumContentHeight, 80) : 0
                 SplitView.preferredHeight: library.active ? 120 : undefined
                 show4decks: root.show4decks
                 visible: root.showWaveforms && !root.maximizeLibrary
@@ -209,7 +209,7 @@ Item {
 
                 SplitView.fillHeight: library.active
                 SplitView.maximumHeight: library.active ? undefined : requiredPaneHeight
-                SplitView.minimumHeight: requiredPaneHeight
+                SplitView.minimumHeight: Math.min(requiredPaneHeight, 450)
                 implicitHeight: requiredPaneHeight
                 width: splitView.width
 
